@@ -1,14 +1,13 @@
-import { ApiContext, IData } from "../../providers/ApiContext"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { useForm } from "react-hook-form"
 import { WhiteSquare } from "./style"
+import { ApiContext } from "../../providers/ApiContext"
 import { useContext } from "react"
+import { useForm } from "react-hook-form"
+import { IData } from "../../interfaces"
 import * as yup from "yup"
 
 export default function Square(){
     const { calculateValue, value } = useContext(ApiContext)
-
-    console.log(value)
 
     const formSchema = yup.object().shape({
         amount: yup.string().required("Valor da venda obrigatório"),

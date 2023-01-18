@@ -1,22 +1,8 @@
-import { createContext, useState, ReactNode } from "react"; 
+import { createContext, useState } from "react"; 
+import { IProvidersProps, IData, IContext } from "../interfaces";
 import axios from "axios"
 
-interface IProvidersProps{
-    children: ReactNode;
-}
 
-export interface IData{
-    amount?: number;
-    installments?: number;
-    mdr?: number;
-}
-
-interface IContext{
-    calculateValue: (
-        data: IData
-    ) => void;
-    value: string
-}
 
 export const ApiContext = createContext<IContext>({} as IContext)
 
