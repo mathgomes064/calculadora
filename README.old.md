@@ -1,1 +1,1 @@
-# calculadora
+# calculadora que mede o quanto custa a antecipação de uma transação, com indicadores como valor, parcelas e mdr.
