@@ -44,7 +44,13 @@ border-radius: 5px;
 
     }
 
-    .innerLeftDiv > form > input{
+    .innerLeftDiv > form >  input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .innerLeftDiv > form >  input{
+        margin: 0;
         width: 80%;
         height: 35px;
         padding-left: 10px;
